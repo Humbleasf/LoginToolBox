@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.logintoolbox">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginToolBox">
-        <activity android:name=".ViewUsers"></activity>
+        <activity android:name=".ImagePage"></activity>
+        <activity android:name=".ViewUsers" />
         <activity android:name=".RegActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

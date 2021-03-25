@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                                                         Toast.LENGTH_LONG).show();
 
                                                 startActivity(new Intent(MainActivity.this, ViewUsers.class));
-
+                                               //startActivity(new Intent(MainActivity.this, ImagePage.class));
                                             } else {
                                                 Toast.makeText(getApplicationContext(), "You are not my " + strName +
                                                                 " .....",

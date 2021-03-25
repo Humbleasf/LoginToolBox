@@ -3,11 +3,12 @@ package com.example.logintoolbox;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class ViewUsers extends AppCompatActivity {
-
+    ListView listView;
     //Array of string used to print out
     String[] StudentNames ={"Yumna","Kira","Stephan","Ruphael ","Janneke"};
     @Override
@@ -18,12 +19,25 @@ public class ViewUsers extends AppCompatActivity {
         ArrayAdapter adapter = new ArrayAdapter<String>(
                 this,R.layout.activity_listview,StudentNames);
 
-        ListView listView = (ListView) findViewById(R.id.lvOutput);
+        listView = (ListView) findViewById(R.id.lvOutput);
         listView.setAdapter(adapter);
 
         //Search array ... then send finding of the data collected to the new
         //Adapter
         //Send adapter to the listview
 
+    }
+
+
+    public void NewLayout(View view)
+    {
+        /*Login l = new Login();
+
+        DetailsListAdapter adapter = new DetailsListAdapter(this, R.layout.activity_view_multi, l.returnArray());
+        listView.setAdapter(adapter);*/
+        Login l = new Login();
+
+        ImageListAdapter adapter = new ImageListAdapter(this, R.layout.activity_view_with_images, l.returnArrayImages());
+        listView.setAdapter(adapter);
     }
 }
