@@ -29,19 +29,6 @@ public class Login
         return tempArray;
     }
 
-    public ArrayList<DetailsWithImage> returnArrayImages()
-    {
-        ArrayList<DetailsWithImage> tempArray = new ArrayList<>();
-        for (int i = 0; i <arrSize ; i++)
-        {
-            DetailsWithImage temp = new DetailsWithImage(aName[i],aPassword[i],"","https://picsum.photos/500/300");
-            tempArray.add(temp);
-        }
-        return tempArray;
-    }
-
-
-
     public void setOlderUsers()
     {
         aName[0]="Granny";

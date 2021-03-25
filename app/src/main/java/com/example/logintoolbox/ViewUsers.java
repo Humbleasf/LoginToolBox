@@ -31,13 +31,9 @@ public class ViewUsers extends AppCompatActivity {
 
     public void NewLayout(View view)
     {
-        /*Login l = new Login();
-
-        DetailsListAdapter adapter = new DetailsListAdapter(this, R.layout.activity_view_multi, l.returnArray());
-        listView.setAdapter(adapter);*/
         Login l = new Login();
 
-        ImageListAdapter adapter = new ImageListAdapter(this, R.layout.activity_view_with_images, l.returnArrayImages());
+        DetailsListAdapter adapter = new DetailsListAdapter(this, R.layout.activity_view_multi, l.returnArray());
         listView.setAdapter(adapter);
     }
 }

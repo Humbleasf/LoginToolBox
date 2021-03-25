@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginToolBox">
-        <activity android:name=".ImagePage"></activity>
         <activity android:name=".ViewUsers" />
         <activity android:name=".RegActivity" />
         <activity android:name=".MainActivity">
