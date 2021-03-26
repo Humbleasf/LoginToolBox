@@ -1,5 +1,7 @@
 package com.example.logintoolbox;
 
+import java.util.ArrayList;
+
 public class Login
 {
     private static String aName[];
@@ -17,6 +19,16 @@ public class Login
 
     }
 
+    public ArrayList<Details> returnArray()
+    {
+        ArrayList<Details> tempArray = new ArrayList<>();
+        for (int i = 0; i <arrSize ; i++)
+        {
+            Details temp = new Details(aName[i],aPassword[i],null);
+            tempArray.add(temp);
+        }
+        return tempArray;
+    }
     public void setOlderUsers()
     {
         aName[0]="Granny";
